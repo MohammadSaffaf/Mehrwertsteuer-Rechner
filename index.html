@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<section class="">
+    <h1>Mehrwertsteuer-Rechner</h1>
+    <div class="berechnet">
+        <p>Was soll berechnet werden?</p>
+        <div class="berechnet-1">
+        <input type="radio" id="netto" name="betrag" value="Mwst" onclick="myFunction1()" checked>
+        <label for="netto" id="mehr1" > Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+    </div>
+    <div class="berechnet-2">
+        <input type="radio" id="brutto" name="betrag" value="Mwst1" onclick="myFunction2()" >
+        <label for="brutto" id="mehr2"> Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+    </div>
+    
+    </div>
+    <div class="steuersatz">
+        <p>Mehrwertsteuersatz</p>
+        <input type="radio" name="steuersatz" id="prozent-1" checked >
+        <label for="prozent-1" > 19%</label>
+        <input type="radio" name="steuersatz" id="prozent-2" >
+        <label for="prozent-2"> 7%</label>
+    </div>
+    <div class="price">
+        <p id="price">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</p>
+        <input type="text" name="" id="numPrice" placeholder="Preis ">
+    </div>
+    <button onclick="Berechnen()" id="berechnen">Berechnen</button>
+    <h2>Ergebnis</h2>
+    <div class="ergebnis-1">
+        <p id="ergebnis-1">Mehrwertsteuerbetrag</p>
+        <h3 id="müll"></h3>
+    </div>
+    <div class="ergebnis-2">
+        <p id="ergebnis-2">Bruttobetrag(Endpreis)</p>
+        <h3 id="müll2"></h3> 
+    </div>
+
+</section>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
