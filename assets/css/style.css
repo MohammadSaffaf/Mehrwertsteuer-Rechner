@@ -79,4 +79,7 @@ h1 {
   body {
     font-size: 0.5rem;
   }
+  section {
+    width: 100%;
+  }
 }
